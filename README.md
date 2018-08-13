@@ -11,7 +11,7 @@ development.
 * YouCOmpleteMe for real time syntax errors highlighting
 * Vim-buftabline for easy buffers management 
 
-![features preview][doc/vim_preview.apng]
+![features preview](https://github.com/hornmich/vim-ide-cfg/blob/master/doc/vim_preview.apng "Preview of the features.")
 
 # Installation
 
