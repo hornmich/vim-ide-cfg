@@ -22,6 +22,7 @@ In order to use this configuration, the following prerequisites must be fulfille
 * VIM version: 7.4.1578 with Python 2 or 3 support (dictated by [YCM plugin](https://valloric.github.io/YouCompleteMe/)
 * [Vundle plugin](https://github.com/VundleVim/Vundle.vim)
 * Have a directory tree at your home like the following (this is obvious if you follow the Vundle installation guide, but I mention it for clarity of next steps):
+```
      .vim/
     | bundle/
     | | Vundle.vim/
@@ -39,6 +40,7 @@ In order to use this configuration, the following prerequisites must be fulfille
     | | | README_ZH_CN.md
     | | | README_ZH_TW.md
     | | | changelog.md
+```
 
 ## Installation
 
@@ -59,6 +61,9 @@ Create local .ycm_extra_conf.py file using the one located in ~/.vim directory a
 
 To fill the paths to header files I am using the following command and put the output to the find .ycm_extra_conf.py file.
 
-find $(pwd) -type f -printf "\t'-I', '%p',\n" | grep -P ".*\.h((pp)|(h))?',$"
+
+```
+    find $(pwd) -type f -printf "\t'-I', '%p',\n" | grep -P ".*\.h((pp)|(h))?',$"
+```
 
 And thats it.
